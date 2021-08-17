@@ -1,0 +1,540 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+/* general styles */
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+	width: 1500px;
+	margin: 0 auto;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.btn{
+	text-transform: uppercase;
+	border: none;
+	color: #ffffff;
+	font-weight: 900;
+	font-size: 14px;
+	border-radius: 5px;
+	width: 150px;
+	height: 46px;
+}
+
+.section-heading{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
+}
+
+.section-subheading{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section{
+	text-align: center;
+	padding-top: 120px;
+}
+
+.section .flex-container{
+	padding: 120px 0;
+}
+
+/* general styles */
+
+/* header styles */
+
+.header{
+	text-align: center;
+}
+
+.hero{
+	width: 100%;
+	height: 800px;
+	padding: 40px 0;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/assets/media/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 800px;
+}
+
+/* icons bar */
+
+.icons-menu{
+	margin: 0 auto 30px auto;
+	width: 180px;
+}
+
+.item-icon{
+	font-size: 14px;
+	border-radius: 50%;
+	background-color: white;
+	width: 40px;
+	height: 40px;
+	padding-top: 13px;
+	color: #000000;
+}
+
+/* icons bar */
+
+/* nav bar */
+
+.nav{
+	background-color: #ffffff;
+	height: 100px;
+	text-transform: uppercase;
+}
+
+.brand-name{
+	font-size: 42px;
+	margin-left: 24px;
+	color: #ec523f;
+	font-weight: 700;
+}
+
+.brand-image{
+	height: 100px;
+}
+
+.nav-item{
+	display: block;
+	text-decoration: none;
+	color: #000000;
+	height: 100px;
+	padding-top: 42px;
+	margin: 0 34px;
+}
+
+.nav-item:hover{
+	border-top: 4px solid red;
+	padding-top: 38px;
+}
+
+.nav-items-right{
+	height: 100px;
+}
+
+strong{
+	font-weight: 900;
+}
+
+.text-danger{
+	color: #ec523f;
+	font-weight: 600;
+}
+
+.text-primary{
+	color: #0b0be2;
+}
+
+.text-success{
+	color: #008000;
+}
+/* nav bar */
+
+/* hero container styles */
+
+.hero-container{
+	text-align: center;
+	padding: 200px 0;
+	text-transform: uppercase;
+	color: white;
+}
+
+.hero-heading{
+	font-size: 40px;
+	padding: 10px 0;
+	display: inline-block;
+	border-bottom: 2px solid #ffffff;
+	font-weight: 700;
+	margin-bottom: 28px;
+}
+
+.hero-text{
+	font-size: 20px;
+	margin-bottom: 28px;
+	font-weight: 600;
+}
+
+.btn-design{
+	background-color: #ea513e;
+}
+
+/* hero container styles */
+
+/* header styles */
+
+/* section styles */
+
+/* icons grid */
+
+.grid-icons{
+	height: 350px;
+	background-color: rgb(64, 101, 134);
+	width: calc(25% - 20px);
+	font-size: 50px;
+	color: #ffffff;
+	padding: 150px 0;
+}
+
+.icon-1{background-color: #5cbd9d;}
+.icon-2{background-color: #e67f31;}
+.icon-3{background-color: #3998db;}
+.icon-4{background-color: #68cd73;}
+
+/* icons grid */
+
+/* image grid styles */
+
+.grid-image{
+	width: calc(25% - 30px);
+	margin-bottom: 40px;
+	height: 300px;
+	object-fit: cover;
+}
+
+
+/* image grid styles */
+
+/* team grid styles */
+
+.team-image{
+	border-radius: 50%;
+	height: 350px;
+}
+
+/* team grid styles */
+
+/* skills section design */
+
+.design .section-heading{
+	font-style: italic;
+	font-size: 20px;
+	border-bottom: none;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.design .section-subheading{
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: none;
+	color: #9e9a9a;
+}
+
+.article-content{
+	text-align: left;
+	width: 950px;
+}
+
+.article-text{
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 24px;
+	letter-spacing: 1.1px;
+	line-height: 1.7;
+	color: #685c5c;
+}
+
+
+
+.design .flex-container{
+	align-items: flex-start;
+}
+
+.skill-wrapper{
+	margin-bottom: 10px;
+	width: 500px;
+	height: 40px;
+}
+
+.flex-item{
+	display: flex;
+}
+
+.skill{
+	background-color: #ea513e;
+	line-height: 40px;
+}
+.skill-grey{
+	background-color: #e7e7e7;
+	line-height: 40px;
+}
+.skill-1{width: 90%;}
+.skill-2{width: 10%;}
+.skill-3{width: 80%;}
+.skill-4{width: 20%;}
+.skill-5{width: 70%;}
+.skill-6{width: 30%;}
+
+
+/* skills section design */
+
+
+/* map design */
+
+.mapouter{
+	margin-top: 100px;
+}
+
+
+
+/* map design */
+
+.contact .flex-container{
+	align-items: flex-start;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+form{
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+input{
+	height: 46px;
+}
+
+textarea{
+	padding-top: 12px;
+}
+
+input, textarea{
+	margin-bottom: 16px;
+	border: none;
+	border: 1px solid #c7c3c3;
+	padding-left: 12px;
+	font-size: 14px;
+}
+
+.btn-form{
+	background-color: #ea513e;
+	width: 100%;
+}
+
+address{
+	padding-top: 32px;
+}
+
+address .article-text{
+	margin-bottom: 5px;
+}
+
+
+/* section styles */
+
+.footer{
+	padding: 20px 0;
+}
+
+.footer .flex-container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.btn-footer{
+	cursor: pointer;
+	border-radius: 0;
+	background-color: #ea513e;
+}
+
+.btn-link:hover{
+	box-shadow: 1px 0 5px 0 black;
+}
+
+small{
+	font-size: 14px;
+	font-weight: 600;
+	color: #685c5c;
+}
+
+
+/* ************************* gallery page styles ***************************** */
+
+/* general styles */
+
+#gala .flex-container{
+	align-items: flex-start;
+}
+
+.gallery-header{
+	display: flex;
+	flex-direction: column;
+	padding: 36px 32px;
+	justify-content: space-between;
+	width: calc(25% - 20px);
+	height: 100vh;
+	background-color: #ec523f;
+	position: fixed;
+	top: 0;
+}
+
+.gallery-container{
+	margin-left: 25%;
+	width: 75%;
+	min-height: 100vh;
+}
+
+.header-flex-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	height: 100px;
+}
+
+.brand-name-2{
+	line-height: 100px;
+	font-size: 32px;
+	margin-left: 12px;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+}
+
+.brand{
+	display: flex;
+	align-items: center;
+}
+
+.btn-gallery{
+	width: 64px;
+	height: 32px;
+	font-size: 12px;
+	background-color: #ec523f;
+	border: 2px solid #ffffff;
+}
+
+.btn-gallery:hover{
+	cursor: pointer;
+	background-color: #ffffff;
+	color: #ec523f;
+}
+
+.heading{
+	font-size: 28px;
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+.aside-text{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	padding-right: 40px;
+	line-height: 1.7;
+}
+
+.aside-icon{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	width: 42px;
+	height: 42px;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+}
+
+.gallery-nav{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 140px;
+}
+
+
+/* general styles */
+
+/* gallery images section styles */
+
+.gallery{
+	text-align: center;
+	padding: 32px 0;
+}
+
+.gallery-flex-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 40px;
+}
+
+.gallery-grid-image{
+	width: 100%;
+	margin-bottom: 40px;
+	border-radius: 5px;
+	border: 2px solid #000000;
+}
+
+.gallery-flex-container-left, .gallery-flex-container-right{
+	display: flex;
+	flex-direction: column;
+	width: calc(50% - 20px);
+}
+
+
+/* gallery images section styles */
+
