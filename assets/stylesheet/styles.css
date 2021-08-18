@@ -111,7 +111,7 @@ body{
 	width: 100%;
 	height: 800px;
 	padding: 40px 0;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/assets/media/banner.jpg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("banner.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 800px;
 }
@@ -346,21 +346,21 @@ strong{
 	padding-right: 20px;
 }
 
-form{
+.form{
 	width: 500px;
 	display: flex;
 	flex-direction: column;
 }
 
-input{
+.input-field{
 	height: 46px;
 }
 
-textarea{
+#message{
 	padding-top: 12px;
 }
 
-input, textarea{
+.input-field, #message{
 	margin-bottom: 16px;
 	border: none;
 	border: 1px solid #c7c3c3;
@@ -369,15 +369,16 @@ input, textarea{
 }
 
 .btn-form{
+	border-radius: 0;
 	background-color: #ea513e;
 	width: 100%;
 }
 
-address{
+.address{
 	padding-top: 32px;
 }
 
-address .article-text{
+.address .article-text{
 	margin-bottom: 5px;
 }
 
@@ -399,11 +400,11 @@ address .article-text{
 	background-color: #ea513e;
 }
 
-.btn-link:hover{
+.btn-top-anchor:hover{
 	box-shadow: 1px 0 5px 0 black;
 }
 
-small{
+.footer-text{
 	font-size: 14px;
 	font-weight: 600;
 	color: #685c5c;
@@ -414,7 +415,7 @@ small{
 
 /* general styles */
 
-#gala .flex-container{
+#gallery-page .flex-container{
 	align-items: flex-start;
 }
 
