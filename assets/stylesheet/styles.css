@@ -50,7 +50,7 @@ html{
 
 /* general styles */
 body{
-  font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -74,6 +74,7 @@ body{
 	border-radius: 5px;
 	width: 150px;
 	height: 46px;
+	background-color: #ea513e;
 }
 
 .section-heading{
@@ -102,11 +103,16 @@ body{
 /* general styles */
 
 /* header styles */
-
 .header{
 	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	overflow: hidden;
 }
-
 .hero{
 	width: 100%;
 	height: 800px;
@@ -115,31 +121,31 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100% 800px;
 }
+/* header styles */
 
 /* icons bar */
-
-.icons-menu{
+.social-menu{
 	margin: 0 auto 30px auto;
 	width: 180px;
 }
-
-.item-icon{
+.social-icon{
 	font-size: 14px;
 	border-radius: 50%;
 	background-color: white;
 	width: 40px;
 	height: 40px;
-	padding-top: 13px;
+	line-height: 40px;
 	color: #000000;
 }
-
 /* icons bar */
 
 /* nav bar */
+.brand-image, .page-nav, .nav-item, .nav{
+	height: 100px;
+}
 
 .nav{
 	background-color: #ffffff;
-	height: 100px;
 	text-transform: uppercase;
 }
 
@@ -150,15 +156,10 @@ body{
 	font-weight: 700;
 }
 
-.brand-image{
-	height: 100px;
-}
-
 .nav-item{
 	display: block;
 	text-decoration: none;
 	color: #000000;
-	height: 100px;
 	padding-top: 42px;
 	margin: 0 34px;
 }
@@ -166,10 +167,6 @@ body{
 .nav-item:hover{
 	border-top: 4px solid red;
 	padding-top: 38px;
-}
-
-.nav-items-right{
-	height: 100px;
 }
 
 strong{
@@ -191,7 +188,6 @@ strong{
 /* nav bar */
 
 /* hero container styles */
-
 .hero-container{
 	text-align: center;
 	padding: 200px 0;
@@ -201,7 +197,7 @@ strong{
 
 .hero-heading{
 	font-size: 40px;
-	padding: 10px 0;
+	padding: 180px 0 10px 0;
 	display: inline-block;
 	border-bottom: 2px solid #ffffff;
 	font-weight: 700;
@@ -214,18 +210,8 @@ strong{
 	font-weight: 600;
 }
 
-.btn-design{
-	background-color: #ea513e;
-}
-
-/* hero container styles */
-
-/* header styles */
-
 /* section styles */
-
 /* icons grid */
-
 .grid-icons{
 	height: 350px;
 	background-color: rgb(64, 101, 134);
@@ -239,32 +225,25 @@ strong{
 .icon-2{background-color: #e67f31;}
 .icon-3{background-color: #3998db;}
 .icon-4{background-color: #68cd73;}
-
 /* icons grid */
 
 /* image grid styles */
-
 .grid-image{
 	width: calc(25% - 30px);
 	margin-bottom: 40px;
 	height: 300px;
 	object-fit: cover;
 }
-
-
 /* image grid styles */
 
 /* team grid styles */
-
 .team-image{
 	border-radius: 50%;
 	height: 350px;
 }
-
 /* team grid styles */
 
 /* skills section design */
-
 .design .section-heading{
 	font-style: italic;
 	font-size: 20px;
@@ -295,8 +274,6 @@ strong{
 	color: #685c5c;
 }
 
-
-
 .design .flex-container{
 	align-items: flex-start;
 }
@@ -325,19 +302,12 @@ strong{
 .skill-4{width: 20%;}
 .skill-5{width: 70%;}
 .skill-6{width: 30%;}
-
-
 /* skills section design */
 
-
 /* map design */
-
 .mapouter{
 	margin-top: 100px;
 }
-
-
-
 /* map design */
 
 .contact .flex-container{
@@ -370,7 +340,6 @@ strong{
 
 .btn-form{
 	border-radius: 0;
-	background-color: #ea513e;
 	width: 100%;
 }
 
@@ -382,9 +351,7 @@ strong{
 	margin-bottom: 5px;
 }
 
-
 /* section styles */
-
 .footer{
 	padding: 20px 0;
 }
@@ -397,7 +364,7 @@ strong{
 .btn-footer{
 	cursor: pointer;
 	border-radius: 0;
-	background-color: #ea513e;
+	
 }
 
 .btn-top-anchor:hover{
@@ -410,11 +377,7 @@ strong{
 	color: #685c5c;
 }
 
-
 /* ************************* gallery page styles ***************************** */
-
-/* general styles */
-
 #gallery-page .flex-container{
 	align-items: flex-start;
 }
@@ -444,7 +407,7 @@ strong{
 	height: 100px;
 }
 
-.brand-name-2{
+.gallery-brand{
 	line-height: 100px;
 	font-size: 32px;
 	margin-left: 12px;
@@ -462,7 +425,6 @@ strong{
 	width: 64px;
 	height: 32px;
 	font-size: 12px;
-	background-color: #ec523f;
 	border: 2px solid #ffffff;
 }
 
@@ -470,6 +432,10 @@ strong{
 	cursor: pointer;
 	background-color: #ffffff;
 	color: #ec523f;
+}
+
+.gallery .hero-heading{
+	padding: 10px 0;
 }
 
 .heading{
@@ -480,7 +446,7 @@ strong{
 	margin-bottom: 20px;
 }
 
-.aside-text{
+.header-text{
 	font-size: 16px;
 	font-weight: 600;
 	margin-bottom: 20px;
@@ -488,7 +454,7 @@ strong{
 	line-height: 1.7;
 }
 
-.aside-icon{
+.gallery-nav-icon{
 	display: inline-block;
 	font-size: 18px;
 	line-height: 40px;
@@ -506,11 +472,7 @@ strong{
 	padding-right: 140px;
 }
 
-
-/* general styles */
-
 /* gallery images section styles */
-
 .gallery{
 	text-align: center;
 	padding: 32px 0;
@@ -535,7 +497,4 @@ strong{
 	flex-direction: column;
 	width: calc(50% - 20px);
 }
-
-
 /* gallery images section styles */
-
