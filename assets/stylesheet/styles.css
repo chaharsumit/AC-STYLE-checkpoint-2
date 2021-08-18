@@ -378,10 +378,6 @@ strong{
 }
 
 /* ************************* gallery page styles ***************************** */
-#gallery-page .flex-container{
-	align-items: flex-start;
-}
-
 .gallery-header{
 	display: flex;
 	flex-direction: column;
