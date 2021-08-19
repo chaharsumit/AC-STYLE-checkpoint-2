@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body id="home">
-  <header class="header">
+  <header class="header" id="home">
     <div class="container">
       <div class="social-menu flex-container">
         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -24,15 +24,15 @@
           <a href="#" class="brand-image">
             <img src="assets/media/logo.png" alt="logo">
           </a>
-          <a class="brand-name">flex</a>
+          <a href="#" class="brand-name">flex</a>
         </div>
         <div class="page-nav flex-container">
-          <a href="#" class="nav-item">home</a>
-          <a href="#" class="nav-item">services</a>
-          <a href="#" class="nav-item">portfolio</a>
-          <a href="#" class="nav-item">team</a>
+          <a href="#home" class="nav-item">home</a>
+          <a href="#services" class="nav-item">services</a>
+          <a href="#portfolio" class="nav-item">portfolio</a>
+          <a href="#team" class="nav-item">team</a>
           <a href="gallery.html" class="nav-item">gallery</a>
-          <a href="#" class="nav-item">contact</a>
+          <a href="#contact" class="nav-item">contact</a>
         </div>
       </nav>
     </div>
@@ -45,7 +45,7 @@
         <button class="btn btn-design">let us design!</button>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="services">
       <div class="container">
         <h2 class="section-heading">our services</h2>
         <p class="section-subheading">we design mobile-first websites for you</p>
@@ -57,7 +57,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="portfolio">
       <div class="container">
         <h2 class="section-heading">our portfolio</h2>
         <p class="section-subheading">amazing work for our clients</p>
@@ -73,7 +73,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="team">
       <div class="container">
         <h2 class="section-heading">our team</h2>
         <p class="section-subheading">our people are very united for your success</p>
@@ -83,41 +83,43 @@
           <img src="assets/media/member3.jpg" alt="work desk" class="grid-image team-image">
           <img src="assets/media/member4.jpg" alt="yak" class="grid-image team-image">
         </div>
-        <article class="design">
-          <h2 class="section-heading">design skills</h2>
-          <p class="section-subheading">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-          <div class="flex-container">
-            <div class="article-content">
-              <p class="article-text">
-                Aliquam faucibus in dolor sed vestibulum. Sed adipiscing malesuada luctus. Morbi tincidunt, tellus scelerisque scelerisque scelerisque, sapien dui pretium augue, at consectetur sapien tellus vitae nunc. Ut vitae metus quis nulla cursus adipiscing pretium vel dolor. Fusce lacinia accumsan arcu, quis porttitor nisi tincident ut. Nunc malesuada nunc eget nunc sollicitudin posuere. Maecenas vitae tortor quis odio hendrerit sagittis.
-              </p>
-              <p class="article-text">
-                Please visit <span class="text-danger">Too CSS</span> to see collections of free HTML CSS templates for your websites. Etiam tincidunt, magna eu elementum tristique, sapien nisl venenatis lacus dui eget lorem. Donec in tempus mi. Aenean egestas interdum dolor, et mollis lectus consequat. Mauris ullamcorper, felis sit met gravida malesuada, nisi sem rhoncus massa, non tempor est erat sit amet diam. 
-              </p>
-            </div>
-            <div class="skills-container">
-              <div class="skill-wrapper flex-item">
-                <div class="skill skill-1">PHOTOSHOP 90%</div>
-                <div class="skill-grey skill-2"></div>
-              </div>
-              <div class="skill-wrapper flex-item">
-                <div class="skill skill-3">HTML CSS 80%</div>
-                <div class="skill-grey skill-4"></div>
-              </div>
-              <div class="skill-wrapper flex-item">
-                <div class="skill skill-5">DEVELOPMENT 70%</div>
-                <div class="skill-grey skill-6"></div>
-              </div>
-              <div class="skill-wrapper flex-item">
-                <div class="skill skill-3">MARKETING 80%</div>
-                <div class="skill-grey skill-4"></div>
-              </div>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
-    <section class="section contact">
+    <section class="section design-section">
+      <div class="container design">
+        <h2 class="section-heading">design skills</h2>
+        <p class="section-subheading">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="flex-container">
+          <div class="article-content">
+            <p class="article-text">
+              Aliquam faucibus in dolor sed vestibulum. Sed adipiscing malesuada luctus. Morbi tincidunt, tellus scelerisque scelerisque scelerisque, sapien dui pretium augue, at consectetur sapien tellus vitae nunc. Ut vitae metus quis nulla cursus adipiscing pretium vel dolor. Fusce lacinia accumsan arcu, quis porttitor nisi tincident ut. Nunc malesuada nunc eget nunc sollicitudin posuere. Maecenas vitae tortor quis odio hendrerit sagittis.
+            </p>
+            <p class="article-text">
+              Please visit <span class="text-danger">Too CSS</span> to see collections of free HTML CSS templates for your websites. Etiam tincidunt, magna eu elementum tristique, sapien nisl venenatis lacus dui eget lorem. Donec in tempus mi. Aenean egestas interdum dolor, et mollis lectus consequat. Mauris ullamcorper, felis sit met gravida malesuada, nisi sem rhoncus massa, non tempor est erat sit amet diam. 
+            </p>
+          </div>
+          <div class="skills-container">
+            <div class="skill-wrapper flex-item">
+              <div class="skill skill-1">PHOTOSHOP 90%</div>
+              <div class="skill-grey skill-2"></div>
+            </div>
+            <div class="skill-wrapper flex-item">
+              <div class="skill skill-3">HTML CSS 80%</div>
+              <div class="skill-grey skill-4"></div>
+            </div>
+            <div class="skill-wrapper flex-item">
+              <div class="skill skill-5">DEVELOPMENT 70%</div>
+              <div class="skill-grey skill-6"></div>
+            </div>
+            <div class="skill-wrapper flex-item">
+              <div class="skill skill-3">MARKETING 80%</div>
+              <div class="skill-grey skill-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
       <div class="container">
         <h2 class="section-heading">contact</h2>
         <p class="section-subheading">send a message to us</p>
